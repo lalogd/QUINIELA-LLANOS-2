@@ -326,7 +326,7 @@ function send(){ //Envía quiniela al whatsapp
         save();
     if (quantity > 0){
     let whatsapptext = res.join("%20%20")
-    const quinbara = "*Quiniela de $20 pesos*%0A%0A";
+    const quinbara = "*Quiniela(s)*%0A%0A";
     whatsapptext = encodeURI(localStorage.getItem("results"));
     whatsapptext = whatsapptext.split('*').join('%0D').replace(/#/g,"");
     window.location.href = "https://wa.me/525515372239?text="+quinbara + whatsapptext;}
