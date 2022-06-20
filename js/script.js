@@ -62,7 +62,7 @@ function start(){
                 break;
         }
         id = i;
-    document.getElementById("total").innerHTML = "Total: $" + quantity*30 +"\n";
+    document.getElementById("total").innerHTML = "Total: $" + quantity*0 +"\n";
 	}  
 }
 function updatedisplay(modo){
@@ -122,7 +122,7 @@ function updatedisplay(modo){
             id++;
         }
     }
-    document.getElementById("total").innerHTML = "Total: $" + quantity*30;
+    document.getElementById("total").innerHTML = "Total: $" + quantity*0;
 }
 function selection(element){ 	//Pinta la casilla y actualiza el texto de la quiniela.
     let index = parseInt(element.id.slice(1)) - 1;
@@ -281,7 +281,7 @@ function costoactual(){
         for (var i=0;i<10;i++){
              aux2*= res[i].length;
         }
-        document.getElementById("costo").innerHTML = "Costo: $" + aux2*30;
+        document.getElementById("costo").innerHTML = "Costo: $" + aux2*0;
         document.getElementById("numquinielas").innerHTML = aux2 + " Quiniela(s)"
     }
 }
@@ -304,7 +304,7 @@ function remove(e){
     results = results.join("*");
     localStorage.setItem("results",results);
     document.querySelector('.botonenviar span').textContent = quantity;
-    document.getElementById("total").innerHTML = "Total: $" + quantity*30 +"\n";
+    document.getElementById("total").innerHTML = "Total: $" + quantity*0 +"\n";
     updatedisplay(2);
 }
 function removeLastLine(){
@@ -326,7 +326,7 @@ function send(){ //Envía quiniela al whatsapp
         save();
     if (quantity > 0){
     let whatsapptext = res.join("%20%20")
-    const quinbara = "*Quiniela de $30 pesos*%0A%0A";
+    const quinbara = "*Quiniela*%0A%0A";
     whatsapptext = encodeURI(localStorage.getItem("results"));
     whatsapptext = whatsapptext.split('*').join('%0D').replace(/#/g,"");
     window.location.href = "https://wa.me/525531996577?text="+quinbara + whatsapptext;}
