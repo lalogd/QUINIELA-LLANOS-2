@@ -7,11 +7,11 @@
 body {
     max-width: 400px;
     margin: auto;
-    background: radial-gradient(circle,  rgb(244, 176, 132) 0%, rgb(228, 217, 13) 52%, rgb(235, 217, 18) 100%);
+    background: radial-gradient(circle,  rgb(13, 13, 13) 0%, rgb(89, 89, 84) 52%, rgb(93, 92, 82) 100%);
 }
 .quiniela {
     margin: auto;
-    background-image: url("../img/jornada7.jpg");
+    background-image: url("../img/jornada7n.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     max-width: 400px;
@@ -53,11 +53,11 @@ body {
 h1 {
     text-align: center;
     padding: 19px;
-    color: #080808;
+    color: #f9f7f7;
     margin-top: 8%;
     border-radius: 0 0 10px 10px;
     background: rgb(240, 243, 240);
-    background: radial-gradient( rgba(244, 176, 132) 0%, rgb(232, 237, 9) 52%, rgb(232, 237, 9) 100%);
+    background: radial-gradient( rgb(18, 18, 18) 0%, rgb(61, 60, 60) 52%, rgb(80, 80, 78) 100%);
     font-size: x-large;
 }
 h2, h3 {
@@ -83,7 +83,7 @@ h2, h3 {
     height: 25px;
 }
 #botonlisto {
-    background: #f6af6e;  
+    background: #797877;  
     color: #111111;
     font-size: 10px;
     padding: 10px;
@@ -190,8 +190,8 @@ h6 {
     font-size: 14px;
 }
 .suma {
-    background: #f6af6e;
-    color: #0a0a0a;
+    background: #858483;
+    color: #1a1919;
     border-radius: 5px;
     box-right-shadow: 2px #f7eeee;
     height: 45px;
@@ -204,8 +204,8 @@ h6 {
     width: 100%;
 }
 .reglas {
-    color: #0c0c0c;
-    background: #e4e70b;
+    color: #f7f4f4;
+    background: #797973;
     border-radius: 10px;
     border: 1px solid rgb(12, 12, 12);
     font-size: 11px;
