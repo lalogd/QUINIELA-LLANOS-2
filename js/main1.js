@@ -384,9 +384,9 @@ let confetti = [];
 function createConfetti() {
     const x = Math.random() * canvas.width;
     const y = 0;
-    const size = Math.random() * 5 + 3; // tamaño de papelitos
+    const size = Math.random() * 1 + 1; // tamaño de papelitos
     const color = colors[Math.floor(Math.random() * colors.length)];
-    const speed = Math.random() * 3 + 1;
+    const speed = Math.random() * 1 + 1;
     const tilt = Math.random() * 10 - 5;
     confetti.push({x, y, size, color, speed, tilt});
 }
@@ -419,7 +419,7 @@ function animateConfetti() {
     requestAnimationFrame(animateConfetti);
 }
 
-setInterval(createConfetti, 20); // cantidad de confeti
+setInterval(createConfetti, 10); // cantidad de confeti
 animateConfetti();
 
 window.addEventListener("resize", () => {
