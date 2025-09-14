@@ -419,7 +419,7 @@ function animateConfetti() {
     requestAnimationFrame(animateConfetti);
 }
 
-setInterval(createConfetti, 80); // cantidad de confeti
+setInterval(createConfetti, 20); // cantidad de confeti
 animateConfetti();
 
 window.addEventListener("resize", () => {
@@ -429,6 +429,7 @@ window.addEventListener("resize", () => {
 
 
 window.addEventListener("load",start,false);
+
 
 
 
