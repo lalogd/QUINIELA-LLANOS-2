@@ -384,7 +384,7 @@ let confetti = [];
 function createConfetti() {
     const x = Math.random() * canvas.width;
     const y = 0;
-    const size = Math.random() * 8 + 5; // tamaño de papelitos
+    const size = Math.random() * 5 + 3; // tamaño de papelitos
     const color = colors[Math.floor(Math.random() * colors.length)];
     const speed = Math.random() * 3 + 1;
     const tilt = Math.random() * 10 - 5;
@@ -429,5 +429,6 @@ window.addEventListener("resize", () => {
 
 
 window.addEventListener("load",start,false);
+
 
 
