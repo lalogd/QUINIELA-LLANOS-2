@@ -5,7 +5,7 @@ let resultStorage = "results";
 let aliasStorage = "alias";
 
 let price = 0;  //replace *0
-let tel = "525627275572";
+let tel = "525538788437";
 let nPartidos = 10;
 let partidoSup = false;
 
@@ -429,6 +429,7 @@ window.addEventListener("resize", () => {
 
 
 window.addEventListener("load",start,false);
+
 
 
 
